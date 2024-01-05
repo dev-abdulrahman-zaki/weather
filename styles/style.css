@@ -1,0 +1,84 @@
+body{
+    color: #bfc1c8; background-color: #262936;
+}
+/* nav */
+nav{padding-top: 50px !important;  padding-bottom: 50px !important;  background-color: #1E202B !important;}
+nav .nav-logo{font-size: 18px;  color: white;}
+
+/* header */
+header{
+    background-color: #1e202b; padding-top: 70px;  padding-bottom: 50px;
+    background-image: url(../images/banner.png);  background-repeat: no-repeat;
+}
+.card-head{
+    background-color: rgba(0, 0, 0, 0.1);  padding: 10px;  font-size: 14px;
+}
+.city{font-size: 18px;}
+
+.current-weather .card-head{
+    display: flex;  align-items: center;  justify-content: space-between;
+}
+.wind{
+    display: flex;  align-items: center;
+}
+.wind > div:not(:last-child){
+    margin-right: 20px;
+}
+.wind img{
+    margin-right: 5px;
+}
+.current-weather .card-body{
+    padding: 30px 20px;
+}
+.day1-forecast .card-body,
+.day2-forecast .card-body{
+    padding-top: 50px;  padding-bottom: 10px;  padding-right: 20px;  padding-left: 20px;
+}
+.temp_c, .maxtemp_c{color: white;}
+.maxtemp_c{display: block; font-size: 24px; font-weight: 700;}
+.condition-text{color: #009ad8;  font-size: 14px;  margin-top: 20px;  margin-bottom: 20px;  display: block;}
+.current-weather .temp{display: flex;  align-items: center;}
+.temp_c{font-size: 6.42rem;  font-weight: 700;}
+.current-weather .condition-icon{width: 90px;}
+.day1-forecast .condition-icon, .day2-forecast .condition-icon{margin-bottom: 20px;}
+
+.input{
+    position: relative;  display: flex;  align-items: center;  justify-content: flex-end;
+    margin-bottom: 70px;
+}
+.input input{
+    width: 100%;  border: none;  padding: 20px 30px;
+    background-color: #1E202B;  border-radius: 35px;
+    font-size: 16px;  line-height: 1.15;  color: white;
+}
+.input input:focus{
+    outline: none;
+}
+.input button{
+    position: absolute;  
+    transform: translateX(-7%);
+    padding: 10px 33px;
+    height: 80%;
+    border: none;
+    border-radius: 35px;
+    background: #009AD8;
+    cursor: pointer;  color: white;
+}
+
+@media screen and (min-width: 992px) {
+    header .container .br-1{border-radius: 10px 0 0 10px !important;}
+    header .container .br-2{border-radius: 0 10px 10px 0 !important;}
+}
+@media screen and (max-width: 991px) {
+    .current-weather .temp {flex-direction: column;  align-items: flex-start;}
+    header .container .br-1{border-radius: 10px 10px 0 0 !important;}
+    header .container .br-2{border-radius: 0 0 10px 10px !important;}
+}
+
+/* footer */
+footer .card-body > span{
+    padding: 6px;
+    background-color: #323544;
+    color: #BFC1C8;
+    border-radius: 8px;
+}
