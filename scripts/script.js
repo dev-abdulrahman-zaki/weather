@@ -102,7 +102,7 @@ function displayIPInfo(data){
   if(data){
     document.getElementById("ipInfo").innerHTML = `
       <div class="card-head text-center">
-      <span class="fs-5">Your IP Information</span>              
+      <span class="fs-5">Your Current Location</span>              
       </div>
       <div class="card-body d-flex flex-column align-items-start row-gap-2">                
       <span>Country: ${data.country_name}</span>
