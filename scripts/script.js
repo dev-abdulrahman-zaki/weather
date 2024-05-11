@@ -107,7 +107,7 @@ function displayIPInfo(data){
       <div class="card-body d-flex flex-column align-items-start row-gap-2">                
       <span>Country: ${data.country_name}</span>
       <span>City: ${data.city}</span>
-      <span>IPv4: ${data.ip}</span>
+      // <span>IPv4: ${data.ip}</span>
       <span>ISP: ${data.org}</span>
       </div>
     `
